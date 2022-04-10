@@ -1,0 +1,20 @@
+@import "./reset.scss";
+.wrapper {
+  max-width: 1228px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+._cont {
+  max-width: 1178px;
+}
+
+@import "./header.scss";
+@import "./first-block.scss";
+@import "./second-block.scss";
+@import "./reviews-block.scss";
+@import "./footer.scss";
+
+
+

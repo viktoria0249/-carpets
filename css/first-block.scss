@@ -1,0 +1,118 @@
+.first_block {
+  margin-top: 47px;
+  padding-bottom: 50px;
+  background-image: url("../img/background1.svg"), url("../img/group_top.svg"),
+    url("../img/group_bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 15% top 141px, left 31% top 220px,
+    left 9% bottom 67px;
+  background-size: 50% auto, 4% auto, 7% auto;
+  .menu {
+    display: flex;
+    .menu__section {
+      font-weight: 300;
+      font-size: 18px;
+      color: #737373;
+    }
+    .menu__section_logotip {
+      flex-grow: 0.02;
+    }
+    .menu__section_name {
+      font-style: italic;
+      font-weight: 900;
+      font-size: 36px;
+      padding-top: 7px;
+      flex-grow: 1;
+      color: #000;
+    }
+    .menu__section_links {
+      padding-top: 8px;
+      padding-left: 25px;
+      a {
+        color: #000;
+      }
+    }
+  }
+  .main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .main__title {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 59px;
+    }
+    .main_loc {
+      font-weight: 300;
+      font-size: 24px;
+      padding-top: 10px;
+      line-height: 28px;
+    }
+    .main__button {
+      font-weight: 900;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      border-radius: 7px;
+      background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
+      margin-top: 20px;
+      padding: 16px 32px;
+      &:hover {
+        background: linear-gradient(269.91deg, #2e3192b3 0%, #d4145ab3 98.16%);;
+      }
+    }
+  }
+}
+.carpet {
+  padding-left: 50px;
+}
+@media (min-width: 1851px) {
+  .fist-block {
+    background-size: 35% auto, 4% auto, 7% auto;
+  }
+}
+
+@media (max-width: 985px) {
+  .carpet {
+    padding-left: 0px;
+    width: 40%;
+  }
+}
+@media (max-width: 769px) {
+  .menu__section_links {
+    display: none;
+  }
+}
+@media (max-width: 648px) {
+  .main__title {
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 30px;
+  }
+  .carpet {
+    display: none;
+  }
+  .main {
+    text-align: center;
+  }
+}
+@media (max-width: 502px) {
+  .first_block {
+    background-size: 65% auto, 4% auto, 7% auto;
+    background-position: right center, left 31% top 220px,
+    left 9% bottom 67px;
+  }
+  .main__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .main__button {
+    font-size: 15px;
+  }
+  .menu__section_logotip, .menu__section_name {
+    flex-grow: 0;
+  }
+  .menu {
+    justify-content: center;
+  }
+}

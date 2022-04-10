@@ -1,0 +1,80 @@
+.header {
+  background: linear-gradient(269.91deg, #2e3192b3 0%, #d4145ab3 98.16%);
+  .reference {
+    display: flex;
+    .reference_section {
+      padding-top: 26px;
+      font-size: 14px;
+      color: #fff;
+    }
+    .reference_section_img {
+      padding-right: 8px;
+      padding-top: 31px;
+    }
+    .reference_section_phone1 {
+      font-size: 15px;
+      flex-grow: 0.05;
+      padding-top: 31px;
+    }
+    .reference_section_phone2 {
+      font-size: 15px;
+      padding-top: 31px;
+      flex-grow: 0.5;
+    }
+    .reference_section_location {
+      padding-top: 31px;
+      flex-grow: 1;
+    }
+    .reference_section_img_location {
+      padding-right: 8px;
+      padding-bottom: 26px;
+    }
+    .reference_section_img_instagram {
+      padding-right: 15px;
+    }
+    .reference_section_strings {
+      line-height: 14px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .reference_section_phone1,
+  .reference_section_phone2,
+  .reference_section_img {
+    display: none;
+  }
+  .reference_section_img_location {
+    padding-left: 45%;
+  }
+}
+@media (max-width: 502px) {
+  .reference {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reference_section_phone1,
+  .reference_section_phone2 {
+    display: block;
+  }
+  .reference_section_phone2 {
+    padding-top: 2px;
+    padding-bottom: 26px;
+    &::after {
+      content: "ваш город";
+      display: flex;
+      justify-content: center;
+      font-size: 17px;
+      line-height: 16px;
+      font-weight: 300;
+      padding-top: 8px;
+    }
+  }
+  .reference_section_img_location,
+  .reference_section_location,
+  .reference_section_strings,
+  .reference_section_img_instagram {
+    display: none;
+  }
+}

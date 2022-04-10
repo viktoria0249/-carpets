@@ -1,0 +1,106 @@
+@charset "UTF-8";
+.header {
+  background: linear-gradient(269.91deg, #2e3192b3 0%, #d4145ab3 98.16%);
+}
+
+.header .reference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .reference .reference_section {
+  padding-top: 26px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.header .reference .reference_section_img {
+  padding-right: 8px;
+  padding-top: 31px;
+}
+
+.header .reference .reference_section_phone1 {
+  font-size: 15px;
+  -webkit-box-flex: 0.05;
+      -ms-flex-positive: 0.05;
+          flex-grow: 0.05;
+  padding-top: 31px;
+}
+
+.header .reference .reference_section_phone2 {
+  font-size: 15px;
+  padding-top: 31px;
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5;
+}
+
+.header .reference .reference_section_location {
+  padding-top: 31px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.header .reference .reference_section_img_location {
+  padding-right: 8px;
+  padding-bottom: 26px;
+}
+
+.header .reference .reference_section_img_instagram {
+  padding-right: 15px;
+}
+
+.header .reference .reference_section_strings {
+  line-height: 14px;
+}
+
+@media (max-width: 769px) {
+  .reference_section_phone1,
+  .reference_section_phone2,
+  .reference_section_img {
+    display: none;
+  }
+  .reference_section_img_location {
+    padding-left: 45%;
+  }
+}
+
+@media (max-width: 502px) {
+  .reference {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .reference_section_phone1,
+  .reference_section_phone2 {
+    display: block;
+  }
+  .reference_section_phone2 {
+    padding-top: 2px !important;
+    padding-bottom: 26px;
+  }
+  .reference_section_phone2::after {
+    content: "ваш город";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 300;
+    padding-top: 8px;
+  }
+  .reference_section_img_location,
+  .reference_section_location,
+  .reference_section_strings,
+  .reference_section_img_instagram {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

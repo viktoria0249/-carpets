@@ -1,0 +1,60 @@
+.contacts {
+  padding-top: 172px;
+  padding-bottom: 68px;
+  background: url("../img/footer1.svg") no-repeat, url("../img/footer2.svg") no-repeat;
+  background-position: left 69px top 82px, right 122px top 19px;
+}
+
+.contacts .col {
+  max-width: 931px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contacts .col .col__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 22px;
+}
+
+.contacts .col .col__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contacts .col .col__text_line-height {
+  line-height: 20px;
+}
+
+.contacts .col .col__text_p {
+  padding-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    background-size: 7% auto, 13% auto;
+    background-position: right 122px top 19px, left 69px top 82px;
+  }
+}
+
+@media (max-width: 648px) {
+  .col {
+    text-align: center;
+  }
+  .col_inf {
+    padding-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
